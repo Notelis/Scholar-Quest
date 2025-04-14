@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4tmen3page7u"]
+
+[ext_resource type="Texture2D" uid="uid://bgllj86wlhq6k" path="res://textures/lobby_bg.png" id="1_4ibtg"]
+[ext_resource type="Texture2D" uid="uid://bnabx8cjt2i6j" path="res://textures/Energy.png" id="2_xdxtp"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_4ibtg")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 839.0
+offset_top = 31.0
+offset_right = 1371.0
+offset_bottom = 215.0
+scale = Vector2(0.626316, 0.590341)
+texture = ExtResource("2_xdxtp")

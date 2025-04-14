@@ -1,0 +1,183 @@
+[gd_scene load_steps=15 format=3 uid="uid://cdluiux27oknn"]
+
+[ext_resource type="Script" path="res://scripts/control.gd" id="1_fe0c2"]
+[ext_resource type="Texture2D" uid="uid://dr5tkr1vn1b1x" path="res://textures/homescreen_background.jpg" id="2_x3ge4"]
+[ext_resource type="Texture2D" uid="uid://d3vnfa2t0js1f" path="res://textures/Play.png" id="3_dev5a"]
+[ext_resource type="Texture2D" uid="uid://jxohiy2edlso" path="res://textures/navbar box.png" id="3_kgxwv"]
+[ext_resource type="Texture2D" uid="uid://bjiio13lpk0sf" path="res://textures/Gems.png" id="4_vbr7d"]
+[ext_resource type="Texture2D" uid="uid://ccdbpjogmi20b" path="res://textures/Coins.png" id="5_8cwhs"]
+[ext_resource type="Texture2D" uid="uid://bnabx8cjt2i6j" path="res://textures/Energy.png" id="6_asqei"]
+[ext_resource type="Texture2D" uid="uid://0y3kawrfvmjp" path="res://textures/Title.png" id="7_lkvni"]
+[ext_resource type="Texture2D" uid="uid://bahhyi8osswlu" path="res://textures/Leaderboards.png" id="9_oocdf"]
+[ext_resource type="Texture2D" uid="uid://cfwggnvcmfvpu" path="res://textures/Profile.png" id="10_g2wom"]
+[ext_resource type="Texture2D" uid="uid://dtrk2100cux43" path="res://textures/Status Bar Box.png" id="11_xy1r8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1g53"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0n537"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xyvtd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -3353.0
+offset_top = -1163.0
+offset_right = 32.0
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.56382, 1.49033)
+script = ExtResource("1_fe0c2")
+
+[node name="homesreen_background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1675.5
+offset_top = -845.5
+offset_right = 1603.5
+offset_bottom = -158.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.03268, 2.44689)
+texture = ExtResource("2_x3ge4")
+
+[node name="homescreen_navbarup" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -1691.86
+offset_top = -65.7571
+offset_right = 1716.14
+offset_bottom = 258.243
+grow_horizontal = 2
+texture = ExtResource("3_kgxwv")
+
+[node name="homescreen_navbardown" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00207801
+anchor_top = 0.823958
+anchor_right = 1.00835
+anchor_bottom = 1.02227
+offset_right = 1.78516
+offset_bottom = 2.13586
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.999476, 0.993408)
+texture = ExtResource("3_kgxwv")
+metadata/_edit_use_anchors_ = true
+
+[node name="homescreen_title" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.00812311
+anchor_top = 0.0119894
+anchor_right = 0.412088
+anchor_bottom = 0.129493
+offset_right = -322.422
+offset_bottom = -50.7083
+scale = Vector2(1.30854, 1.3622)
+texture = ExtResource("7_lkvni")
+metadata/_edit_use_anchors_ = true
+
+[node name="homescreen_energy" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.471896
+anchor_top = 0.0124028
+anchor_right = 0.648613
+anchor_bottom = 0.140036
+offset_right = -14.1868
+offset_bottom = -23.1495
+scale = Vector2(1.02429, 1.12581)
+texture = ExtResource("6_asqei")
+metadata/_edit_use_anchors_ = true
+
+[node name="homescreen_gems" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.656083
+anchor_top = 0.0128162
+anchor_right = 0.791552
+anchor_bottom = 0.137749
+offset_right = -18.563
+offset_bottom = -17.7662
+grow_horizontal = 0
+scale = Vector2(1.04219, 1.09603)
+texture = ExtResource("4_vbr7d")
+metadata/_edit_use_anchors_ = true
+
+[node name="homescreen_coins" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.795687
+anchor_top = 0.0124028
+anchor_right = 0.976793
+anchor_bottom = 0.136373
+offset_right = -29.0447
+offset_bottom = -17.2042
+grow_horizontal = 0
+scale = Vector2(1.04973, 1.0935)
+texture = ExtResource("5_8cwhs")
+metadata/_edit_use_anchors_ = true
+
+[node name="start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -273.541
+offset_top = -250.825
+offset_right = 254.459
+offset_bottom = 50.1754
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.955943, 0.847311)
+theme_override_icons/icon = ExtResource("3_dev5a")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u1g53")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 778.223
+offset_top = 1393.65
+offset_right = 1034.22
+offset_bottom = 1633.65
+theme_override_styles/normal = SubResource("StyleBoxFlat_0n537")
+icon = ExtResource("9_oocdf")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 2
+offset_right = 256.0
+
+[node name="person" type="Button" parent="."]
+layout_mode = 2
+offset_left = 2919.13
+offset_top = 1378.89
+offset_right = 3175.13
+offset_bottom = 1607.89
+icon = ExtResource("10_g2wom")
+
+[node name="house" type="Button" parent="."]
+layout_mode = 2
+offset_left = 315.893
+offset_top = 1387.61
+offset_right = 571.893
+offset_bottom = 1643.61
+theme_override_styles/normal = SubResource("StyleBoxFlat_xyvtd")
+icon = ExtResource("11_xy1r8")
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
